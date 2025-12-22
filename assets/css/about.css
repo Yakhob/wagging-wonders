@@ -1,0 +1,128 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #e0f7fa);
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Container */
+.about-container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 50px 40px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    animation: slideFade 1.3s ease forwards;
+}
+
+/* Title */
+.about-container h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #ff4e50;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.about-container h1::after {
+    content: '';
+    display: block;
+    width: 90px;
+    height: 5px;
+    background: linear-gradient(to right, #ff4e50, #f9d423);
+    margin: 12px auto 35px;
+    border-radius: 3px;
+}
+
+/* Section Titles */
+.about-section h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 35px;
+    font-weight: 600;
+}
+
+.about-section h2::before {
+    content: '🐶';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 1.5rem;
+}
+
+/* Paragraph */
+.about-section p {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Feature List */
+.about-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-section li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    font-size: 1.08rem;
+    color: #444;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.about-section li:hover {
+    color: #ff4e50;
+    transform: translateX(8px) scale(1.03);
+}
+
+.about-section li::before {
+    content: '⭐';
+    font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 25px 20px;
+    }
+
+    .about-container h1 {
+        font-size: 2.4rem;
+    }
+
+    .about-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .about-section p,
+    .about-section li {
+        font-size: 1rem;
+    }
+}
+
+/* Slide Fade Animation */
+@keyframes slideFade {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
