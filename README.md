@@ -215,7 +215,7 @@ This project is currently unlicensed. Please refer to the repository owner for l
 
 ## 📞 Support & Contact
 
--   📧 Email: <!-- TODO: Add contact email -->
+-   📧 Email: jacobkurian2004@gmail.com
 -   🐛 Issues: [GitHub Issues](https://github.com/Yakhob/wagging-wonders/issues)
 
 ---
